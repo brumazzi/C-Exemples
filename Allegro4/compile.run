@@ -1,0 +1,5 @@
+#!/bin/bash
+
+g++ ex_Allegro.cpp -o ex_Allegro.cpp.run `allegro-config --cflags --libs`
+
+./ex_Allegro.cpp.run

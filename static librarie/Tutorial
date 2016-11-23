@@ -1,0 +1,5 @@
+gcc -c lib1.c(Arquivo de entrada) -o lib1.o(arquivo de saida)
+
+ar rcs libsss.a(saida) lib1.o(entrada)
+
+gcc -static main.c -L. -lsss(biblioteca) -o main(arquivo compilado)

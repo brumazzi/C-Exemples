@@ -1,0 +1,4 @@
+#!/bin/bash
+
+libSO-make class.cpp
+libSO-compile runClass.cpp

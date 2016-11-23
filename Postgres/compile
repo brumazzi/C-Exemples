@@ -1,0 +1,1 @@
+g++ main_query.cpp -lpq

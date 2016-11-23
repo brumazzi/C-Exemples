@@ -1,0 +1,14 @@
+#/bin/bash
+
+rm -f Game_OpenGL.run
+
+g++ Game_OpenGL.cpp -lGL -lGLU -lglut -L. -lLoadModel -o Game_OpenGL.cpp.run
+
+if [ -f Game_OpenGL.cpp.run ]; then
+	mv Game_OpenGL.cpp.run Game_OpenGL.run
+	./Game_OpenGL.run
+else
+	zenity --error --text="Não Foi posivel compilar!"
+fi
+
+exit

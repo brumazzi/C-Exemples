@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Compilando bibliotecas!"
+
+g++ -c -Wall loadraw.cpp
+
+ar rcs libModel.a loadraw.o
+
+echo "Compilando projeto!"
+
+g++ main.cpp -lGL -lGLU -lglut -lSDL -L. -lModel
+
+echo "Executando..."
+
+./a.out 
+
+echo "Encerrado!"

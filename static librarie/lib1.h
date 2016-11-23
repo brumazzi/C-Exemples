@@ -1,0 +1,1 @@
+double cal(double);

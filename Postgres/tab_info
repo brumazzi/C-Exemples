@@ -1,0 +1,2 @@
+cli.pes(nome,snome)
+cli.info(idade,cpf)

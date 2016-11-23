@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cc db_exemple.cpp `mysql_config --libs --cflags` -o db_exemple
+./db_exemple

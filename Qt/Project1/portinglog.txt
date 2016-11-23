@@ -1,0 +1,14 @@
+Log for qt3to4 on dom dez 7 15:40:23 2014. Number of log entries: 1
+In file /mnt/hd/user_files/Projects/C_C++/Exemplos/Qt/Project1/main.cpp at line 4 column 16: qframe.h -> q3frame.h
+
+Log for qt3to4 on dom dez 7 15:40:46 2014. Number of log entries: 9
+No changes made to file /mnt/hd/user_files/Projects/C_C++/Exemplos/Qt/Project1/main.cpp
+In file /mnt/hd/user_files/Projects/C_C++/Exemplos/Qt/Project1/mainwindow.h at line 8 column 16: qframe.h -> q3frame.h
+In file /mnt/hd/user_files/Projects/C_C++/Exemplos/Qt/Project1/mainwindow.h at line 9 column 21: qmainwindow.h -> q3mainwindow.h
+In file /mnt/hd/user_files/Projects/C_C++/Exemplos/Qt/Project1/mainwindow.h at line 11 column 21: QHBoxLayout -> Q3HBoxLayout
+In file /mnt/hd/user_files/Projects/C_C++/Exemplos/Qt/Project1/mainwindow.h at line 15 column 31: QFrame -> Q3Frame
+In file /mnt/hd/user_files/Projects/C_C++/Exemplos/Qt/Project1/mainwindow.h at line 22 column 17: QFrame -> Q3Frame
+In file /mnt/hd/user_files/Projects/C_C++/Exemplos/Qt/Project1/mainwindow.h at line 27 column 13: QHBoxLayout -> Q3HBoxLayout
+In file /mnt/hd/user_files/Projects/C_C++/Exemplos/Qt/Project1/mainwindow.h at line 27 column 39: QHBoxLayout -> Q3HBoxLayout
+In file Project1.pro: Added entry QT +=  qt3support 
+
