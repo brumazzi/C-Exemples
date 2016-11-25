@@ -1,0 +1,23 @@
+*{
+	font-weight: bold;
+}
+
+#window{
+	background-color: rgba(0,0,0,0);
+	background-image: url("image.png");
+}
+
+#button{
+	border: 0px;
+	margin: 0px;
+	color: blue;
+}
+
+#entry{
+	background-image: url("black.png");
+	color: #6f6;
+}
+
+#grid *{
+	margin: 8px;
+}
