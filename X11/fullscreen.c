@@ -1,5 +1,6 @@
 #include <X11/X.h>
 #include <stdlib.h>
+#include <string.h>
 #include <X11/Xlib.h>
 
 int main(){
@@ -20,7 +21,7 @@ XSetWindowAttributes attr = { 0 };
 	//Try to switch to fullscreen
 	XEvent xev;
 	Atom wm_state = XInternAtom(dpy, "_NET_WM_STATE", False);
-	Atom fullscreen = XInternAtom(dpy, "_NET_WM_STATE_FULLSCREEN", False);
+	Atom fullscreen = XInternAtom(dpy, "_NET_WM_STATE_FULLSCREEN", True);
 	memset(&xev, 0, sizeof(xev));
 	xev.type = ClientMessage;
 	xev.xclient.window = win;
