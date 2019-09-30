@@ -27,7 +27,7 @@ void init (void){
 }
 
 int main(int argc, char** argv){
-	/*glutInit(&argc,	argv);
+	glutInit(&argc,	argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(800, 600); 
 	glutInitWindowPosition(100, 100);
@@ -35,7 +35,8 @@ int main(int argc, char** argv){
 	init();
 
 	glutDisplayFunc(display);	
-	glutMainLoop();*/
+	glutMainLoop();
+
 	return 0;
 }
 

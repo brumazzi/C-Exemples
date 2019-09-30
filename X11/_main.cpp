@@ -56,7 +56,7 @@ int main(int argc, char** argv){
 			XDrawString(dpy, win, DefaultGC(dpy, s), 10, y_offset, s1, strlen(s1));
 			y_offset += 20;
 			XDrawString(dpy, win, DefaultGC(dpy, s), 10, y_offset, s2, strlen(s2));
-			y_offset += 20;
+			y_offse += 20;
  
 			if (uname_ok)
 			{

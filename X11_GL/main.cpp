@@ -5,6 +5,7 @@
 #include<GL/gl.h>
 #include<GL/glx.h>
 #include<GL/glu.h>
+#include<GL/glut.h>
 
 Display                 *dpy;
 Window                  root;
@@ -38,7 +39,6 @@ void DrawAQuad() {
 }
 
 int main(int argc, char *argv[]) {
-
 	dpy = XOpenDisplay(NULL);
 
 	if(dpy == NULL) {

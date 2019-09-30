@@ -6,13 +6,19 @@
 
 #include <unistd.h>
 
+int get_windows(Display *disp, Window root, int scr);
+
 int width, height;
 
-void draw(cairo_t *cr) {
-	int quarter_w = width / 4;
-	int quarter_h = height / 4;
-	cairo_set_source_rgb(cr, 1.0, 0.0, 0.0);
-	cairo_rectangle(cr, quarter_w, quarter_h, quarter_w * 2, quarter_h * 2);
+typedef struct rect_info{
+	unsigned short x,y;
+	unsigned short w,h;
+	float r,g,b;
+}rect_info;
+
+void draw(cairo_t *cr, rect_info rect) {
+	cairo_set_source_rgb(cr, rect.r, rect.g, rect.b);
+	cairo_rectangle(cr, rect.x, rect.y, rect.w, rect.y);
 	cairo_fill(cr);
 }
 
@@ -32,17 +38,24 @@ int main() {
 
 	XSelectInput(d, w, ExposureMask);
 
-	draw(cr);
+	rect_info rect;
+	rect.x = 30;
+	rect.y = 30;
+	rect.w = 100;
+	rect.h = 100;
+	rect.r = 0.0;
+	rect.g = 0.2;
+	rect.b = 0.0;
+	draw(cr, rect);
 
-	sleep(5);
-	/*XEvent ev;
+	XEvent ev;
 	while (1) {
 		XNextEvent(d, &ev);
 		printf("Event!\n");
-		if (ev.type == Expose) {
-			draw(cr);
-		}
-	}*/
+		//if (ev.type == Expose) {
+			draw(cr, rect);
+		//}
+	}
 
 	cairo_destroy(cr);
 	cairo_surface_destroy(surf);

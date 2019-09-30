@@ -15,15 +15,16 @@ public:
 };
 
 int main(){
-	Externa externa();
+	Externa *externa = new Externa();
 	
-	Externa::Interna interna();
-//	interna.Menssage();
+	Externa::Interna *interna = new Externa::Interna();
+	interna->Menssage();
 
 
 	system("sleep 2");
 
-//	delete externa;
+	delete interna;
+	delete externa;
 
 	return 0;
 }

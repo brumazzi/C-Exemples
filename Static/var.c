@@ -9,7 +9,7 @@ int funct(){
 	return y;
 }
 
-void main(){
+int main(){
 	int x = 3;
 	while(x--){
 		funct();
@@ -17,4 +17,5 @@ void main(){
 	x = funct();
 
 	printf("%i",x);
+	return 0;
 }

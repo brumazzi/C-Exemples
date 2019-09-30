@@ -10,7 +10,7 @@ int main(){
 	JavaVMInitArgs vm_args;
 	JavaVMOption option;
 
-	vm_args.version = JNI_VERSION_1_6;
+	//vm_args.version = JNI_VERSION_1_6;
 	vm_args.nOptions = 1;
 	vm_args.options = &option;
 	vm_args.ignoreUnrecognized = 0;

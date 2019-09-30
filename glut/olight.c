@@ -3,7 +3,7 @@
 #include <string.h>
 
 #include <GL/glut.h>
-#include "loadraw.h"
+//#include "loadraw.h"
 
 /* function declarations */
 //ModelRaw raw;

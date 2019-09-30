@@ -15,7 +15,7 @@ int main(int argc, char *argv[]){
 		attr = (xmlNodePtr) cur->properties;
 		xmlNodePtr childs = cur->xmlChildrenNode;
 		cont = xmlNodeGetContent(cur); // get element content
-		key = xmlNodeListGetString(doc, childs, 1); // get value o element
+		key = xmlNodeListGetString(doc, childs, 1); // get value of element
 		
 		attr_val = xmlNodeGetContent(attr); // get value of attribute
 		//attr_val = xmlNodeListGetString(doc, attr->xmlChildrenNode, 1);

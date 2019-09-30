@@ -17,6 +17,11 @@ int main(){
 	cout << str[0] << endl;
 	cout << str.front() << endl;
 	cout << str.back() << endl;
+
+	auto pos = str.begin();
+	str.erase(pos, pos+1);
+	
+	cout << str.size() << endl;
 	cout << str.data() << endl;
 	cout << str.capacity() << endl;
 

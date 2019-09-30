@@ -1,0 +1,10 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.13.2)
+PROJECT(3D-Wallpaper)
+
+SET(3D-WALLPAPER gl_init.c  gl_light.c  cvector.c  main.c  wavefront.c)
+
+LINK_LIBRARIES(GL GLU X11 SDL)
+
+INCLUDE_DIRECTORIES(".")
+
+ADD_EXECUTABLE(3d-wallpaper ${3D-WALLPAPER})
