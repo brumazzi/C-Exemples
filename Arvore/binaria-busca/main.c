@@ -13,14 +13,14 @@ int main(int argc, char *argv[]){
 		x++;
 	}
 
-	tree_search(t, 4);
-
+	tree_remove(t, 14);
 	tree_remove(t, 1);
 	tree_remove(t, 6);
 	tree_remove(t, 33);
 
 
 	printf(" 12 %s\n", tree_search(t, 12) RESULT_CAST);
+	printf(" 11 %s\n", tree_search(t, 11) RESULT_CAST);
 	printf(" 26 %s\n", tree_search(t, 26) RESULT_CAST);
 	printf(" 33 %s\n", tree_search(t, 33) RESULT_CAST);
 	printf(" 34 %s\n", tree_search(t, 34) RESULT_CAST);

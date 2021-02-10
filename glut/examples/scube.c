@@ -418,6 +418,7 @@ keyboard(unsigned char ch, int x, int y)
 void
 display(void)
 {
+	printf("...\n");
   GLfloat cubeXform[4][4];
 
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

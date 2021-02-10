@@ -44,10 +44,10 @@ void drawSceene(){
 	gluLookAt(0,3,5,0,0,0,0,1,0);
 
 
-
 	glPushMatrix();
 	glBindTexture(GL_TEXTURE_2D,tex);
-/*	glBegin(GL_QUADS);
+
+	glBegin(GL_QUADS);
 	glTexCoord2f(0.0,0.0);
 	glVertex3f(-1.0,1.0,.0);
 	glTexCoord2f(0.0,1.0);
@@ -56,7 +56,8 @@ void drawSceene(){
 	glVertex3f(1.0,-1.0,.0);
 	glTexCoord2f(1.0,0.0);
 	glVertex3f(1.0,1.0,.0);
-	glEnd();*/
+	glEnd();
+
 	glPopMatrix();
 	GLfloat position[] = {.2,1.2,2.0};
 	glLightfv(GL_LIGHT0,GL_POSITION, position);

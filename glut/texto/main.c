@@ -17,13 +17,16 @@ void escreve(int width,int height,int x,int y,void *font,char *texto){
 void display(void){
 	glClear	(GL_COLOR_BUFFER_BIT); 
 	escreve(800,600,400,300,GLUT_BITMAP_TIMES_ROMAN_24,"Texte com String");
+	void *quad = gluNewQuadric();
+	gluSphere(quad, .3, 8,8);
 	glFlush ();
+	gluDeleteQuadric(quad);
 }
 void init (void){
 	glClearColor(1.0, 1.0, 1.0, 0.0);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	glOrtho(0.0,1.0, 0.0, 1.0, -1.0, 1.0);
+	glOrtho(0.0,0.0, 0.0, 0.0, -1.0, 1.0);
 }
 
 int main(int argc, char** argv){
